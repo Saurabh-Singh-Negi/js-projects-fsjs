@@ -8,7 +8,7 @@ let interval = null;
 let seconds = 0;
 let hours = 0;
 let minutes = 0;
-let sec = 58;
+let sec = 0;
 
 // event listeners
 // start timer
