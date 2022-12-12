@@ -1,5 +1,82 @@
-.tasks-container {
-    max-width: 200px;
-    display: flex;
-    justify-content: space-between
+* {
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background: #2062CA;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.todo-header {
+    color: #2062CA;
+    background: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.container {
+    background: aliceblue;
+    width: 500px;
+    min-height: 100px;
+    color: black;
+    margin: 10rem auto;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    
+}
+
+.task-inp {
+    width: 75%; 
+    height: 30px;
+    padding-left: .5rem;
+}
+
+.btn-add {
+    height: 30px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    padding: 0 .6rem;
+}
+
+.tasks-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: .2rem;
+    height: 50px;
+}
+
+.todo-ele {
+    width: 75%;  
+}
+
+button {
+    cursor: pointer;
+    border-radius: .2rem;
+    height: 30px;
+}
+
+.edit {
+   margin-right: 5px; 
+   background: rgb(15, 198, 15);
+   border: none;
+   padding: 0 .6rem;
+}
+
+.delete {
+    background: red;
+    border: none;
+    padding: 0 .6rem;
+}
+
+/*
+
+.tasks {
+    max-width: 200px;
+    text-align: center;
+} */

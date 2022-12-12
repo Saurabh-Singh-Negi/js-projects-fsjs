@@ -5,10 +5,15 @@ const tasks = document.querySelector(".tasks");
 
 
 btn_add.addEventListener("click", () => {
+    if(task.value == '') {
+        alert("no text entered");
+        return
+    }
     const tasks_container = document.createElement('div');
     tasks_container.classList.add('tasks-container');
     const todo_ele = document.createElement("p");
     todo_ele.innerHTML = task.value;
+    todo_ele.classList.add('todo-ele');
     tasks_container.appendChild(todo_ele);
 
     const edit_ele = document.createElement("button");
