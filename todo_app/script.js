@@ -11,6 +11,16 @@ btn_add.addEventListener("click", () => {
     todo_ele.innerHTML = task.value;
     tasks_container.appendChild(todo_ele);
 
+    const edit_ele = document.createElement("button");
+    edit_ele.innerText = "edit";  
+    edit_ele.classList.add('edit');
+    tasks_container.appendChild(edit_ele);
+    edit_ele.addEventListener('click', () => {
+        let msg = todo_ele.innerText;
+        task.value = msg;
+        edit_ele.parentElement.remove();
+    })
+
     const delete_ele = document.createElement("button");
     delete_ele.innerText = "delete";
     delete_ele.classList.add('delete');
@@ -18,10 +28,6 @@ btn_add.addEventListener("click", () => {
     delete_ele.addEventListener('click', () => {
         delete_ele.parentElement.remove();
     })
-
-    const edit_ele = document.createElement("button");  
-    edit_ele.classList.add('edit');
-    
 
     tasks.appendChild(tasks_container);
     task.value = "";
